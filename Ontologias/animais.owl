@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="Ontologia_animal"
+         xmlns="Ontologia_animal#">
+
+<owl:Ontology rdf:about="Ontologia_animal"/>
+
+<owl:Class rdf:about="#Animal">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#NaoAnimal">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#virus">
+  <rdfs:subClassOf rdf:resource="#NaoAnimal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mamifero">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ave">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Peixe">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Anfibio">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Reptil">
+  <rdfs:subClassOf rdf:resource="#Animal"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cachorro">
+  <rdfs:subClassOf rdf:resource="#Mamifero"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Gato">
+  <rdfs:subClassOf rdf:resource="#Mamifero"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Morcego">
+  <rdfs:subClassOf rdf:resource="#Mamifero"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Gavião">
+  <rdfs:subClassOf rdf:resource="#Ave"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pombo">
+  <rdfs:subClassOf rdf:resource="#Ave"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Passaro">
+  <rdfs:subClassOf rdf:resource="#Ave"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tubarão">
+  <rdfs:subClassOf rdf:resource="#Peixe"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PeixeDourado">
+  <rdfs:subClassOf rdf:resource="#Peixe"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nemo">
+  <rdfs:subClassOf rdf:resource="#Peixe"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sapo">
+  <rdfs:subClassOf rdf:resource="#Anfibio"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Girino">
+  <rdfs:subClassOf rdf:resource="#Anfibio"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Perereca">
+  <rdfs:subClassOf rdf:resource="#Anfibio"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Jacare">
+  <rdfs:subClassOf rdf:resource="#Reptil"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Crocodilo">
+  <rdfs:subClassOf rdf:resource="#Reptil"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cobra">
+  <rdfs:subClassOf rdf:resource="#Reptil"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SubJacare">
+  <rdfs:subClassOf rdf:resource="#Jacare"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SubNemo">
+  <rdfs:subClassOf rdf:resource="#Nemo"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SubSapo">
+  <rdfs:subClassOf rdf:resource="#Sapo"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SubGato">
+  <rdfs:subClassOf rdf:resource="#Gato"/>
+</owl:Class>
+
+<owl:Class rdf:about="#SubPassaro">
+  <rdfs:subClassOf rdf:resource="#Passaro"/>
+</owl:Class>
+
+
+</rdf:RDF>
