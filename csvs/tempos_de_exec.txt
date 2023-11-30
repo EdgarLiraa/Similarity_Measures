@@ -1,0 +1,26 @@
+#################
+Medidas de Caminhos
+SimPath =  176.97000074386597
+SimWuP =  94.98207807540894
+SimNguyan =  329.41494369506836
+SimLeacock =  174.30676126480103
+SimLi =  213.5115361213684
+SimBatet =  65.21789884567261
+
+#################
+Medidas de Conteúdo de informação
+SimResnik & 1467.3 \\
+SimJiang & 1540.5 \\
+SimLin & 1540.6 \\
+SimJaccard & 2911.3 \\
+SimMeng & 1517.6 \\
+
+#################
+Medidas Híbridas
+SimZhou & 4721.4 \\
+SimHasdj & 2290.3 \\
+
+#################
+Medidas de Relacionalidade
+RelMazuel & 1638.2 \\
+RelZhang & 334.9 \\
