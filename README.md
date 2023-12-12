@@ -16,12 +16,51 @@ A biblioteca utiliza uma ontologia específica fornecida pelo usuário (no exemp
 pip install owlsimilarity
 ```
 
+## Medidas Disponíveis
+
+### Medidas Baseadas em Caminho
+
+- `sim_path_df()`: Similaridade de caminho.
+- `sim_wup_df()`: Similaridade Wu-Palmer.
+- `sim_nguyan_df()`: Similaridade Nguyen.
+- `sim_leacock_df()`: Similaridade Leacock-Chodorow.
+- `sim_li_df()`: Similaridade Li.
+- `sim_batet_df()`: Similaridade Batet.
+
+### Medidas de Conteúdo de Informação
+
+- `sim_resnik_df(seco)`: Similaridade Resnik.
+- `sim_jiang_df(seco)`: Similaridade Jiang-Conrath.
+- `sim_lin_df(seco)`: Similaridade Lin.
+- `sim_jaccard_df(seco)`: Similaridade Jaccard.
+- `sim_meng_df(seco)`: Similaridade Meng.
+
+### Medidas Híbridas
+
+- `sim_zhou_df()`: Similaridade Zhou.
+- `sim_hasdj_df()`: Similaridade Hasdjian.
+
+### Medidas de Relacionamento
+
+- `rel_mazuel_df()`: Relacionamento de Mazuel.
+- `rel_zhang_df()`: Relacionamento de Zhang.
+
+## Parâmetros Adicionais
+
+- `seco`: Um parâmetro possível para as medidas de conteúdo de informação (`sim_resnik_df`, `sim_jiang_df`, `sim_lin_df`, `sim_jaccard_df`, `sim_meng_df`).
+- `sanchez`: Seria um segundo parâmetro possível para ser passado como parâmetro
+- Nada mais são do que maneiras de calcular o information content dessas medidas
+
+## Saída
+
+Os resultados das medidas são armazenados em DataFrames do pandas e podem ser salvos em arquivos CSV para análise posterior.
+
 ## Exemplo de Uso
 
 ```python
 import owlsimilarity as ow
 
-# Carregar a ontologia
+# Carregar a ontologia passando o caminho do arquivo OWL como parâmetro
 classe = ow.SimilarityOnto("animais.owl")
 
 # Medidas Baseadas em Caminho
@@ -77,43 +116,6 @@ df.to_csv("csvs/relMazuel")
 df = classe.rel_zhang_df()
 df.to_csv("csvs/simZhang")
 ```
-
-## Medidas Disponíveis
-
-### Medidas Baseadas em Caminho
-
-- `sim_path_df()`: Similaridade de caminho.
-- `sim_wup_df()`: Similaridade Wu-Palmer.
-- `sim_nguyan_df()`: Similaridade Nguyen.
-- `sim_leacock_df()`: Similaridade Leacock-Chodorow.
-- `sim_li_df()`: Similaridade Li.
-- `sim_batet_df()`: Similaridade Batet.
-
-### Medidas de Conteúdo de Informação
-
-- `sim_resnik_df(seco)`: Similaridade Resnik.
-- `sim_jiang_df(seco)`: Similaridade Jiang-Conrath.
-- `sim_lin_df(seco)`: Similaridade Lin.
-- `sim_jaccard_df(seco)`: Similaridade Jaccard.
-- `sim_meng_df(seco)`: Similaridade Meng.
-
-### Medidas Híbridas
-
-- `sim_zhou_df()`: Similaridade Zhou.
-- `sim_hasdj_df()`: Similaridade Hasdjian.
-
-### Medidas de Relacionamento
-
-- `rel_mazuel_df()`: Relacionamento de Mazuel.
-- `rel_zhang_df()`: Relacionamento de Zhang.
-
-## Parâmetros Adicionais
-
-- `seco`: Um parâmetro que deve ser fornecido para as medidas de conteúdo de informação (`sim_resnik_df`, `sim_jiang_df`, `sim_lin_df`, `sim_jaccard_df`, `sim_meng_df`). Este parâmetro é específico para cada medida.
-- `sanchez`: Seria um segundo parâmetro possível para ser passado como parâmetro
-## Saída
-
-Os resultados das medidas são armazenados em DataFrames do pandas e podem ser salvos em arquivos CSV para análise posterior.
 
 ## Notas
 
